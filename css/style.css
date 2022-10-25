@@ -1,0 +1,307 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size:62.5%;
+     font-family: 'PT Serif', serif;
+}
+p {
+     font-size:1.6rem;
+}
+h4 {
+     font-size:2rem;
+     padding: 1rem 0;
+     font-weight:bold;
+}
+h3 {
+     font-size:2.4rem;
+     font-weight:bold;
+}
+h2 {
+     font-size:3.2rem;
+     padding:1rem 0;
+     font-weight:bold;
+}
+h1 {
+     font-size:4.6rem;
+     padding:1rem 0;
+     font-weight:bold;
+     color:white;
+     letter-spacing: 0.75rem;
+     text-transform: uppercase;
+}
+a {
+     font-size:1.6rem;
+     text-decoration:none;
+     color:grey;
+}
+
+body {
+     background:white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* General */
+.container {
+     width:90%;
+     margin: 0 auto;
+     position: relative;
+}
+.content {
+     padding: 10rem 10%;
+}
+.content a {
+     margin-top:4rem;
+}
+.content p span {
+     display:inline-block;
+     font-size:3.6rem;
+     font-weight:bold;
+}
+.content span {
+     font-size:1.2rem;
+     text-transform: uppercase ;
+     letter-spacing:0.2rem;
+}
+.content p {
+     text-transform: uppercase ;
+     padding-top:1rem;
+     font-size:2rem;
+     letter-spacing:0.2rem;
+}
+
+/* Banner */
+.banner {
+     background:black;
+     width:25rem;
+     margin-left:10%;
+     
+}
+.banner > p {
+     color: white;
+     text-transform: uppercase ;
+     padding:1.6rem;
+}
+.banner > span {
+     text-transform: uppercase ;
+     display:inline-block;
+     color: white;
+     font-size: 1.6rem;
+     padding:6rem 2rem 2rem;
+}
+.banner > p > span {
+     display:inline-block;
+     font-size:2.6rem;
+     font-weight:bold;
+}
+.banner > a {
+     display:inline-block;
+     margin: 2rem 2rem 4rem;
+}
+/* Header */
+nav * {
+     display:inline-block;
+}
+nav ul {
+     display:none;
+     float:right;
+     padding:2rem 2rem 0 0;
+}
+nav ul li {
+     padding:0 1rem;
+}
+.logo {
+     display:inline-block;
+     font-size: 4rem;
+     padding-left:2rem;
+}
+.hamburger {
+     font-size: 6rem;
+     float: right;
+     padding-right:3rem;
+
+}
+/* Main */
+.main {
+     background: linear-gradient(.25turn,rgb(88, 86, 86), rgb(185, 179, 179));
+}
+
+
+
+/* Buttons */
+.btn {
+     display:inline-block;
+     padding:1rem 2rem;
+     background: black;
+     color:white;
+     text-transform: uppercase;
+}
+.btn-white {
+     display:inline-block;
+     padding:1rem 2rem;
+     background: white;
+     color:black;
+     text-transform: uppercase;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.ps-1 {
+     padding-left:10%;
+}
+.pt-1 {
+     padding-top:10%;
+}
+.content-header {
+     width:45rem;
+}
+.content-header > a {
+     display: inline-block;
+     margin-top:2rem ;
+     
+}
+.content-header > span {
+     color:white;
+     text-transform:uppercase;
+     letter-spacing:0.1rem
+     
+}
+.foldable{
+     display:block;
+     text-align:center;
+     margin-top:5rem;
+}
+.foldable:last-of-type {
+     padding-bottom:10rem;
+}
+.foldable > img {
+     border-radius:50%;
+     width:10rem;
+}
+.foldable-container{
+     width:75%;
+     margin: 0 auto;
+     position: relative;
+     margin-top:10rem;
+}
+.bg-gray {
+     background:rgb(214, 208, 208);
+}
+
+.flex-row {
+     margin:5rem auto;
+
+
+
+}
+.flex-col {
+     padding:1rem;
+     margin:0 auto;
+}
+.flex-col2 {
+     padding:1rem;
+     margin:0 auto;
+}
+.flex-col > a {
+     margin-top:4rem;
+}
+.flex-colimg {
+     display:none;
+     float:right;
+     padding:1rem;
+
+     
+
+
+}
+.flex-colimg2 {
+     margin-left:25%;
+     margin-top:5rem;
+}
+
+.w-50 {
+     max-width:90%;
+}
+.album {
+     margin: 0;
+     margin-top:5rem;
+     padding: 0
+}
+.album img {
+     width:30%;
+
+     
+
+}
+.center-text {
+     text-align:center;
+}
+
+@media (min-width:750px) {
+     .flex-colimg {
+          display:inline-block;
+          
+     }
+     .w-50 {
+          max-width:45%;
+     }    
+     .flex-col2 {
+          padding:1rem;
+
+          float:left;
+     }
+
+}
+@media (min-width:900px) {
+     .flex-colimg2 {
+          text-align:center;
+          width:20%;
+          float:left;
+          margin:0;
+          margin:0 5%;
+          
+     }
+     nav ul {
+          display:inline-block;
+     }
+     .hamburger {
+          display:none;
+     }
+}
+
+@media (min-width:1200px) {
+     .foldable {
+          float:left;
+          margin:0;
+          padding:0 4rem;
+          width:33%;
+     }
+     .foldable-container {
+          margin: 5rem 10%;
+     }
+     
+
+}
