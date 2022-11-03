@@ -22,160 +22,91 @@
 /*******************************************/
 html {
      font-size:62.5%;
-     font-family: 'Nanum Myeongjo', serif;
+     font-family: 'Playfair Display', serif;
 }
-header {
-     background: linear-gradient(0deg,black,rgb(37, 37, 37));
-     box-shadow: 1rem 1rem 1rem grey;
-     
+.header {
+     background-color:rgb(186, 183, 183);
 }
-a {
-     text-decoration:none;
-     font-size:2rem;
-     font-weight:600;
-     color:rgb(195, 194, 194);
-}
-
-
-/******************************************
-/* Header
-/*******************************************/
-#logo {
-     color:rgb(195, 194, 194);
-     font-family: 'Kolker Brush', cursive;
-     font-size:8rem;
-     padding-left:2rem;
-
-}
-nav {
-     display:flex;
-     justify-content:space-between;
-     column-gap: 2rem;
-     
-}
-nav a {
+h1,h2,h3,h4 {
+     font-weight:700;
      text-transform:uppercase;
-     letter-spacing:0.4rem;
-     align-self:center;
 }
-nav .nav {
-     display:flex;
-     width:100%;
-     flex-flow:row nowrap;
-     align-content:stretch;
-     
-     
+h1 {
+     font-size:6rem;
+     letter-spacing: 0.7rem;
+     line-height:8rem;
 }
-.nav li {
-     flex-grow: 2;
-     display:flex;
-     justify-content:center;
-     align-content:stretch;
+h2 {
+     font-size:4.5rem;
+     letter-spacing: 0.5rem;
+     line-height:6rem;
 }
-
-/******************************************
-/* Greeting
-/*******************************************/
-#greeting {
-     
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content:center;
-    background: url('../img/cover-girl.jpg') no-repeat 0 0;
-				background-size: cover;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-     height:60vw;
-}
-#greeting .intro{
-     color:rgb(255, 255, 255);
-     margin-left:10%;
-     margin-bottom:10%;
-}
-.intro h1 {
-     width:50%;
-     text-transform:uppercase;
-     letter-spacing:1rem;
-     font-size:8rem;
-     padding: 2rem 0 ;
-     line-height: 10rem ;
-}
-.intro p {
-     text-transform:uppercase;
-     letter-spacing:0.3rem;
-     margin:0 0 2rem 1rem;
-     padding-bottom:2rem ;
-     font-weight:600;
-     font-size:1.6rem;
-}
-.intro a {
-     margin:0 0 2rem 1rem;
-}
-#greeting .banner{
-
-     width:20%;
-     margin-left:10%;
-}
-#greeting .banner > span {
-     display:block;
-     text-align:center;
-     font-weight:600;
+h3 {
      font-size:3rem;
-     letter-spacing:0.2rem;
-     text-transform: uppercase;
-     color: rgb(255, 255, 255);
-     margin: 3rem 0 6rem;
+     letter-spacing: 0.4rem;
+     line-height:5rem;
 }
-#greeting .banner > p {
-     color: rgb(201, 201, 201);
-     line-height:3rem;
+h4 {
+     font-size:2rem;
+     letter-spacing: 0.3rem;
+     line-height:4rem;
+}
+p{
      font-size:1.6rem;
-     font-weight:600;
-     letter-spacing:0.2rem;
-     text-transform: uppercase;
-     margin:2rem 0;
+     padding: 1rem 0;
+}
+a{
+     text-decoration: none ;
+     color:black;
+     font-size: 1.6rem;
+
+}
+#logo {
+     font-size:5rem;
+     line-height:7rem;
+}
+/******************************************
+/* Special styling
+/*******************************************/
+.intro {
+     width:33%;
+     margin:5% 0 0 5%;
 }
 
-#greeting .banner > a {
-}
 /******************************************
 /* Modules
 /*******************************************/
-.wrapper {
-     clear:both;
-     overflow:none;
+
+.container {
+     width:120rem;
+     background:rgb(193, 192, 192);
+     margin: 0 auto;
 }
-.bg-img {
+
+
+/* Navbar */
+.nav {
+     display:flex;
+     align-items:center;
+     justify-content:space-evenly;
+     gap:2rem;
      width:100%;
-     float:right;
 }
-.btn {
-     color: rgb(225, 225, 225);
-     padding:1rem 3rem;
-     margin:0.4rem;
-     background-color: rgb(37, 37, 37);
-     transition: color 0.3s, background-color 0.6s,padding 0.6s,margin 0.6s;
+.navbar {
+     display:flex;
+}
 
-}
-.btn:hover {
-     color: rgb(37, 37, 37);
-     margin:0rem;
-     padding:1.2rem 3.2rem;
-     background-color: rgb(195, 195, 195);
-}
-.btn-white {
-     color: rgb(37, 37, 37);
-     background-color: rgb(195, 195, 195);
-     padding:1rem 3rem;
-     transition: background-color 0.6s;
-}
-.btn-white:hover {
-     background-color: rgb(255, 255, 255);
-}
-.banner {
-     padding: 4rem 2rem;
-     background-color:rgb(37, 37, 37);
-     text-align:center;
 
+/* flexbox */
+.flex-container {
+     display:flex;
+     flex-flow:row nowrap;
+     justify-content:center;
+}
+
+
+/* sizing */
+
+.w-100 {
+     width:100%;
 }
