@@ -25,7 +25,22 @@ html {
      font-family: 'Playfair Display', serif;
 }
 .header {
-     background-color:rgb(186, 183, 183);
+     background-color:rgb(228, 222, 222);
+}
+.footer {
+     background-color:rgb(16, 16, 16);
+}
+body {
+     background-color:rgb(216, 225, 225);
+}
+.greeting {
+     background-color:rgb(103, 104, 104);
+}
+.container {
+     background-color:rgb(216, 225, 225);
+}
+.bg-none {
+     background-color:rgb(216, 225, 225);
 }
 h1,h2,h3,h4,h5 {
      font-weight:700;
@@ -89,7 +104,7 @@ a{
 }
 .greeting {
      position:relative;
-     background-color:rgb(49, 49, 49);
+     
      overflow:auto;
      margin-bottom:10rem;
 }
@@ -148,31 +163,49 @@ a{
 
 
 /* ************* Lookbook end *************** */
-/*/
+/**/
+/* ************* Social start *************** */
+.social > a{
+     padding: 0 1rem;
+     font-size:4rem;
+     color:white;
+}
+/* ************* Social end *************** */
 /******************************************
 /* Modules
 /*******************************************/
+.line {
+     border-top:3px solid black;
+}
 .scaling {
      transition: transform 0.5s;
 }
 .scaling:hover {
      transform: scale(1.05);
 }
+.box-shadow {
+     box-shadow:0px 0px 100px 0px rgb(185, 185, 185);
+}
+.rounded-corners {
+     border-radius:10px;
+}
 /*/
 /* ************* Containers start *************** */
 .container {
      width:150rem;
-     background-color:rgb(193, 192, 192);
+     
      margin: 0 auto 10rem;
      padding:2rem 2rem 5rem;
 }
-.bg-none {
-     background-color:white;
-}
+
 .content-small {
      width:25%;
      text-align:center;
      padding:0 2rem;
+}
+.wrapper{
+     display:flex;
+
 }
 
 /* ************* Containers end *************** */
@@ -225,6 +258,7 @@ a{
 /* ************* Images end *************** */
 /*/
 /* Navbar */
+
 .nav {
      display:flex;
      align-items:center;
@@ -235,6 +269,23 @@ a{
 .navbar {
      display:flex;
 }
+.link-group{
+     display:flex;
+     flex-flow: column nowrap;
+     margin-left:0.5rem;
+}
+.link-group a {
+     line-height:2rem;
+}
+.link-group a:hover {
+     color:grey;
+}
+.flex-list{
+     padding:0 5%;
+}
+.flex-list h4 {
+     text-decoration: underline;
+}
 
 
 /* flexbox */
@@ -242,6 +293,13 @@ a{
      display:flex;
      flex-flow:row nowrap;
      justify-content:center;
+     padding:2rem 0;
+}
+.flex-container-wrap{
+     display:flex;
+     flex-flow:row nowrap;
+     justify-content:center;
+     padding:2rem 0;
 }
 .gap-1 {
      gap:1rem;
@@ -252,6 +310,8 @@ a{
 .flex-item-center{
      align-self:center;
 }
+
+
 /* ************* Position start *************** */
 .relative {
      position:relative;
@@ -264,6 +324,10 @@ a{
 .w-100 {
      width:100%;
 }
+.w-90 {
+     width:90%;
+     margin:0 auto;
+}
 .w-50 {
      width:50%;
 }
@@ -274,10 +338,30 @@ a{
      font-size: 2rem;
      line-height: 2.5rem;
 }
+.t-center {
+     text-align:center;
+}
 
 .title {
      text-align: center;
      margin-bottom:2rem;
 }
 
-/* Color */
+/******************************************
+/* Screen Logic
+/*******************************************/
+@media (max-width:1500px){
+     .container{
+          width:90%;
+     }
+}
+@media (max-width:1300px){
+     .flex-container-wrap{
+          display:block;
+     }
+     .wrapper {
+          justify-content:center;
+          padding:1rem;
+          
+     }
+}
