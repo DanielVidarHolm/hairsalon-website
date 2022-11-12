@@ -25,22 +25,22 @@ html {
      font-family: 'Playfair Display', serif;
 }
 .header {
-     background-color:rgb(16, 16, 16);
+     background-color:rgb(228, 222, 222);
 }
 .footer {
      background-color:rgb(16, 16, 16);
 }
 body {
-     background-color:rgb(80, 82, 87);
+     background-color:rgb(216, 225, 225);
 }
 .greeting {
-     background-color:rgb(60, 61, 65);
+     background-color:rgb(103, 104, 104);
 }
 .container {
      background-color:rgb(216, 225, 225);
 }
 .bg-none {
-     background-color:rgb(44, 45, 48);
+     background-color:rgb(216, 225, 225);
 }
 h1,h2,h3,h4,h5 {
      font-weight:700;
@@ -183,6 +183,12 @@ a{
 .scaling:hover {
      transform: scale(1.05);
 }
+.box-shadow {
+     box-shadow:0px 0px 100px 0px rgb(185, 185, 185);
+}
+.rounded-corners {
+     border-radius:10px;
+}
 /*/
 /* ************* Containers start *************** */
 .container {
@@ -196,6 +202,10 @@ a{
      width:25%;
      text-align:center;
      padding:0 2rem;
+}
+.wrapper{
+     display:flex;
+
 }
 
 /* ************* Containers end *************** */
@@ -285,6 +295,12 @@ a{
      justify-content:center;
      padding:2rem 0;
 }
+.flex-container-wrap{
+     display:flex;
+     flex-flow:row nowrap;
+     justify-content:center;
+     padding:2rem 0;
+}
 .gap-1 {
      gap:1rem;
 }
@@ -294,6 +310,7 @@ a{
 .flex-item-center{
      align-self:center;
 }
+
 
 /* ************* Position start *************** */
 .relative {
@@ -330,4 +347,21 @@ a{
      margin-bottom:2rem;
 }
 
-/* Color */
+/******************************************
+/* Screen Logic
+/*******************************************/
+@media (max-width:1500px){
+     .container{
+          width:90%;
+     }
+}
+@media (max-width:1300px){
+     .flex-container-wrap{
+          display:block;
+     }
+     .wrapper {
+          justify-content:center;
+          padding:1rem;
+          
+     }
+}
