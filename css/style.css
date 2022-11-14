@@ -87,6 +87,7 @@ a{
 
 }
 #logo {
+     padding:0 1rem;
      font-size:5rem;
      line-height:7rem;
 }
@@ -97,7 +98,8 @@ a{
 .intro {
      position:absolute;
      display:inline-block;
-     width:33%;
+   
+     width:50%;
 
 }
 .intro > h1 {
@@ -119,8 +121,8 @@ a{
 .greeting > .banner {
      position:absolute;
      margin-left:5%;
-     margin-bottom: 10rem;
-     top:40rem;
+     margin-top:5rem;
+     bottom:5rem;
 }
 /* ************* Overlay start *************** */
 .overlay{
@@ -268,9 +270,16 @@ a{
      display:flex;
      align-items:center;
      justify-content:space-evenly;
-     gap:2rem;
+     text-align:center;
      width:100%;
 }
+.nav li {
+     display:inline-block;
+     width:inherit;
+     line-height:7rem;
+     color:black;
+}
+
 .navbar {
      display:flex;
 }
@@ -424,4 +433,16 @@ a{
      }
      
      
+}
+/******************************************
+/* Behaviur Modules
+/*******************************************/
+.highlight-dark {
+     background-color:grey;
+     transition: background-color 0.3s;
+}
+.highlight-dark > a{
+
+     color:white ;
+     transition: color 0.2s;
 }
